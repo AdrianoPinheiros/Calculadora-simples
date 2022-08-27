@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Form Start -->
+        <form action="" name="calculator">
+
+            <!-- Display da calculadora ()saida de dados -->
+            <input type="text" class="text " name="text1" disabled>
+
+            <!-- Botão de calculo  -->
+            <input type="text" class="text1 " name="text12" value="C" onclick="location.reload()"><br>
+             
+            <!-- Botão de entrada de dados numericos -->
+            <input type="button" class="num maincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">
+            <input type="button" class="num maincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">
+            <input type="button" class="num maincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">
+
+            <!-- Botão adição  -->
+            <input type="button" class="num blue" name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br>
+
+             <!-- Botão de entrada de dados numericos -->
+            <input type="button" class="num maincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">
+            <input type="button" class="num maincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">
+            <input type="button" class="num maincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">
+
+             <!-- Botão de subtração  -->
+            <input type="button" class="num pin" name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br>
+
+            <!-- Botão de entrada de dados numericos -->
+            <input type="button" class="num maincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">
+            <input type="button" class="num maincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">
+            <input type="button" class="num maincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">
+
+            <!-- Botão de multiplicação -->
+            <input type="button" class="num gree" name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br>
+            
+            <!-- Botão de "." -->
+            <input type="button" class="num maincolor" name="dot" value="." onclick="displaynum(dot.value)">
+
+            <!-- Botão de entrada de dados numericos -->
+            <input type="button" class="num maincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">
+
+             <!-- Botão de "="-->
+            <input type="button" class="num pur" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+
+            <!-- Botão de "/"-->
+            <input type="button" class="num ora" name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br>
+
+        <!-- Form End     -->
+        </form>
+    </div>
+</body>
+
+</html>
